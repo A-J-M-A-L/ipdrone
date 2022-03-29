@@ -34,8 +34,8 @@ print (red+"""
 ╚═╝╚═╝     ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
                                                       v 1.0
 """+red)
-print (lgreen+bold+"         <===[[ coded by N17RO ]]===> \n"+clear)
-print (yellow+bold+"   <---(( search on youtube Noob Hackers ))--> \n"+clear)
+print (lgreen+bold+"         <===[[ coded by Ajmal ]]===> \n"+clear)
+print (yellow+bold+"   <---(( A tool by noob hacker Ajmal ))--> \n"+clear)
 
 
 ip = args.target

@@ -38,37 +38,4 @@ print (lgreen+bold+"         <===[[ coded by Ajmal ]]===> \n"+clear)
 print (yellow+bold+"   <---(( A tool by noob hacker Ajmal ))--> \n"+clear)
 
 
-ip = args.target
 
-api = "http://ip-api.com/json/"
-
-try:
-        data = requests.get(api+ip).json()
-        sys.stdout.flush()
-        a = lgreen+bold+"[$]"
-        b = cyan+bold+"[$]"
-        print (a, "[Victim]:", data['query'])
-        print(red+"<--------------->"+red)
-        print (b, "[ISP]:", data['isp'])
-        print(red+"<--------------->"+red)
-        print (a, "[Organisation]:", data['org'])
-        print(red+"<--------------->"+red)
-        print (b, "[City]:", data['city'])
-        print(red+"<--------------->"+red)
-        print (a, "[Region]:", data['region'])
-        print(red+"<--------------->"+red)
-        print (b, "[Longitude]:", data['lon'])
-        print(red+"<--------------->"+red)
-        print (a, "[Latitude]:", data['lat'])
-        print(red+"<--------------->"+red)
-        print (b, "[Time zone]:", data['timezone'])
-        print(red+"<--------------->"+red)
-        print (a, "[Zip code]:", data['zip'])
-        print (" "+yellow)
-
-except KeyboardInterrupt:
-        print ('Terminating, Bye'+lgreen)
-        sys.exit(0)
-except requests.exceptions.ConnectionError as e:
-        print (red+"[~]"+" check your internet connection!"+clear)
-sys.exit(1)
